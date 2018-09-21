@@ -17,13 +17,13 @@
 
 
 <?php
-  // error_reporting(0);
+  error_reporting(0);
   $username = $_POST['username'];
   $password = $_POST['password'];
 
   if ($_POST['submit']){
     if ($username === 'admin' && $password === 'password'){
-      echo "<script> location.href='dashboard.php'; </script>";
+      echo "<script> location.href='admin/dashboard.php'; </script>";
       exit();
 
     }

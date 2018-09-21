@@ -14,16 +14,11 @@
 
   </head>
   <body>
-    <!-- contact and email -->
-    <div class="" style="height:40px; background-color:#181818; color:white;font-weight:150;">
-      <p style="padding-top:8px;padding-left:180px;"><i class="fas fa-headset"></i> +91 93237 10386 <i style="padding-left:20px;" class="far fa-envelope"></i> info@nanbhatjanhitsociety.com</p>
-    </div>
-
     <!-- logo -->
     <div class="" style="height:90px">
       <div class="row" style="padding-left:150px;margin:10px;">
         <div class="col-4" style="margin-right:-300px;">
-          <img style="height:75px;"src="assets/img/logo.png" alt="Logo">
+          <img style="height:75px;"src="../assets/img/logo.png" alt="Logo">
         </div>
         <div class="col-8" style="font-weight:bold;">
           <p style="margin-bottom:-22px;color:#FE0000; font-size:28px">नानभाट जनहित सोसायटी</p><br>
@@ -46,40 +41,16 @@
             <a style="color:white;" class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Members List
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">2017 - 2020</a>
-              <a class="dropdown-item" href="#">2014 - 2017</a>
-              <a class="dropdown-item" href="#">2011 - 2014</a>
-              <a class="dropdown-item" href="#">2008 - 2011</a>
-              <a class="dropdown-item" href="#">2005 - 2008</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-hover="dropdown-menu" aria-haspopup="true" aria-expanded="false">
-              Events Photo Gallary
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">2017 - 2018</a>
-              <a class="dropdown-item" href="#">2065 - 2017</a>
-            </div>
+            <a style="color:white;" class="nav-link" href="add_event_image.php">Add Event Image</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Event Registration</a>
+            <a style="color:white;" class="nav-link" href="add_member.php">Add Member List</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Membership Registration Form</a>
+            <a style="color:white;" class="nav-link" href="view_member.php">View member List</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Feedback</a>
-          </li>
-          <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Contact Us</a>
+            <a style="color:white;" class="nav-link" href="#">Logout</a>
           </li>
         </ul>
       </div>
