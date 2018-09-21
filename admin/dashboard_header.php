@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent" >
         <ul class="navbar-nav" >
           <li class="nav-item active">
-            <a style="color:white;" class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            <a style="color:white;" class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a style="color:white;" class="nav-link" href="add_event_image.php">Add Event Image</a>
