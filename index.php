@@ -37,6 +37,6 @@
   <?php include_once 'officeBearer.php' ?>
 
   <!-- Membership registration form -->
-
+  
 <!-- Footer -->
 <?php include_once 'footer.php' ?>

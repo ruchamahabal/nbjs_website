@@ -22,7 +22,7 @@
     <!-- logo -->
     <div class="" style="height:90px">
       <div class="row" style="padding-left:150px;margin:10px;">
-        <div class="col-4" style="margin-right:-300px;">
+        <div class="col-4" style="margin-right:-350px;">
           <img style="height:75px;"src="assets/img/logo.png" alt="Logo">
         </div>
         <div class="col-8" style="font-weight:bold;">
@@ -46,7 +46,7 @@
             <a style="color:white;" class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">About Us</a>
+            <a style="color:white;" class="nav-link" href="about_us.php">About Us</a>
           </li>
           <li class="nav-item dropdown">
             <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,13 +73,13 @@
             <a style="color:white;" class="nav-link" href="#">Event Registration</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Membership Registration Form</a>
+            <a style="color:white;" class="nav-link" href="membership_form.php">Membership Registration Form</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Feedback</a>
+            <a style="color:white;" class="nav-link" href="feedback.php">Feedback</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Contact Us</a>
+            <a style="color:white;" class="nav-link" href="contact.php">Contact Us</a>
           </li>
         </ul>
       </div>
