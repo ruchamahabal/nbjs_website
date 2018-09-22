@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 21, 2018 at 05:23 PM
--- Server version: 5.7.21
--- PHP Version: 5.6.35
+-- Generation Time: Sep 22, 2018 at 07:24 PM
+-- Server version: 5.7.19
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -48,16 +48,19 @@ CREATE TABLE IF NOT EXISTS `add_member_list` (
   `name` varchar(254) NOT NULL,
   `village` varchar(254) NOT NULL,
   `Designation` varchar(254) NOT NULL,
+  `Year_from` int(4) DEFAULT NULL,
+  `Year_to` int(4) DEFAULT NULL,
   PRIMARY KEY (`member_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `add_member_list`
 --
 
-INSERT INTO `add_member_list` (`member_id`, `name`, `village`, `Designation`) VALUES
-(5, 'abcd', 'sakjds', 'asdasdasd'),
-(6, 'pwef', 'kjndo', 'dksjfndljndw');
+INSERT INTO `add_member_list` (`member_id`, `name`, `village`, `Designation`, `Year_from`, `Year_to`) VALUES
+(13, 'bgdn', 'gn', 'grngn', NULL, NULL),
+(14, 'hdvbkajv', 'dvn v', 'adnv', NULL, NULL),
+(15, 'djvnj', 'kjdvn', 'jdsvn', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -19,8 +19,18 @@
       $resultCheck = mysqli_num_rows($result);
           if($resultCheck > 0){
             $counter = 1;
-            while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
-               echo "<tr><td>" . $counter."</td><td>" . $row['name'] . "</td><td>" . $row['village'] . "</td><td>" .$row['Designation']."</td><td>"."<Button class='delete btn btn-danger' style='margin:0px;'>Del</button> "."</td></tr>";
+            while($row = mysqli_fetch_assoc($result))
+            {
+               //Creates a loop to loop through results
+               ?>
+              <tr id=<?php echo $row['member_id']; ?> >
+               <td><?php echo $counter; ?></td>
+               <td><?php echo $row['name']; ?></td>
+               <td><?php echo $row['village']; ?> </td>
+               <td><?php echo $row['Designation']; ?></td>
+               <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#DeleteModal" data-mid="<?php echo $row['member_id']; ?>" style="margin:0px;">Del</button></td>
+             </tr>
+             <?php
                $counter ++;
           }
       }
@@ -28,5 +38,45 @@
     </tbody>
   </table>
 </div>
+      <!-- delete-modal -->
+      <div class="modal" id="DeleteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Warning!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to delete the record?</p>
+            </div>
+            <div class="modal-footer">
+              <form action="delete_member.php" method="post">
+                <input name="mid"  class="form-control mmid" style="display:none;">
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<?php include_once '../footer.php' ?>
+      <script type="text/javascript" src="../js/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+      $('#DeleteModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      var mid = button.data('mid')
+      var modal = $(this)
+      modal.find('.modal-footer .mmid').val(mid)
+      })
+      </script>
+
+      <div class="" style="background-color:#5F5F5F;" align=center>
+        <p style="font-size:16px;" class="lead">&#169; नानभाट जनहित सोसायटी 2018</p>
+      </div>
+    </body>
+</html>
