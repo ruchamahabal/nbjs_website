@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
   $txt = "You have received a feedback from ".$name.".\n\nPhone number :".$phno."\n\nEmail id".$message;
 
   mail($mailTo,$subject,$txt,$headers);
-  // header("Location: index.php?mailSent");
+  echo "<script> alert('Feedback sent successfully');</script>";
   exit();
 }
 
