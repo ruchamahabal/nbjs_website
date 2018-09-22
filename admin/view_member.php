@@ -28,7 +28,7 @@
                <td><?php echo $row['name']; ?></td>
                <td><?php echo $row['village']; ?> </td>
                <td><?php echo $row['Designation']; ?></td>
-               <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#DeleteModal" data-mid="<?php echo $row['member_id']; ?>" style="margin:0px;">Del</button></td>
+               <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#DeleteModal" data-mid="<?php echo $row['member_id']; ?>" style="margin:0px; background-color:#fe0000; color:#fff;">Del</button></td>
              </tr>
              <?php
                $counter ++;
@@ -54,7 +54,7 @@
             <div class="modal-footer">
               <form action="delete_member.php" method="post">
                 <input name="mid"  class="form-control mmid" style="display:none;">
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn" style="background-color:#fe0000; color:#fff;">Delete</button>
               </form>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
