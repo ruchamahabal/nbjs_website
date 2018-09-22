@@ -28,6 +28,26 @@
   <input type="submit" value="Add" class="btn" style="background-color:#FE0000;color:#fff;" name="submit">
 </form>
 </div>
+
+<!-- inserted successfully modal -->
+<div id="insert" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Alert</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Record Inserted Successfully</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 <?php include_once '../footer.php' ?>
 
 <?php
@@ -38,7 +58,11 @@ if (isset($_POST['submit'])) {
   $year = $_POST['year'];
   $sql = "INSERT INTO add_member_list (name,village,Designation,Year) VALUES ('$name', '$village', '$desg', '$year');";
   mysqli_query($conn,$sql);
-  echo "<script> alert('Entry added successfully');</script>";
+  echo "<script type='text/javascript'>
+           $(document).ready(function(){
+               $('#insert').modal('show');
+            });
+      </script>";
   exit();
 }
 else {

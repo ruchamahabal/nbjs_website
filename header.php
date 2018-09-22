@@ -52,12 +52,12 @@
             <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Members List
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">2017 - 2020</a>
-              <a class="dropdown-item" href="#">2014 - 2017</a>
-              <a class="dropdown-item" href="#">2011 - 2014</a>
-              <a class="dropdown-item" href="#">2008 - 2011</a>
-              <a class="dropdown-item" href="#">2005 - 2008</a>
+            <div id="member-list-nav" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="members_list.php">2017 - 2020</a>
+              <a class="dropdown-item" href="members_list.php">2014 - 2017</a>
+              <a class="dropdown-item" href="member_list.php">2011 - 2014</a>
+              <a class="dropdown-item" href="member_list.php">2008 - 2011</a>
+              <a class="dropdown-item" href="member_list.php">2005 - 2008</a>
             </div>
           </li>
           <li class="nav-item dropdown">
