@@ -17,7 +17,7 @@
     <!-- logo -->
     <div class="" style="height:90px">
       <div class="row" style="padding-left:150px;margin:10px;">
-        <div class="col-4" style="margin-right:-300px;">
+        <div class="col-4" style="margin-right:-350px;">
           <img style="height:75px;"src="../assets/img/logo.png" alt="Logo">
         </div>
         <div class="col-8" style="font-weight:bold;">

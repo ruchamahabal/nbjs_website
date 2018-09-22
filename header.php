@@ -65,8 +65,9 @@
               Events Photo Gallary
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">2018 - 2019</a>
               <a class="dropdown-item" href="#">2017 - 2018</a>
-              <a class="dropdown-item" href="#">2065 - 2017</a>
+              <a class="dropdown-item" href="#">2016 - 2017</a>
             </div>
           </li>
           <li class="nav-item">

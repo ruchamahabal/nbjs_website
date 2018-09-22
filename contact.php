@@ -21,22 +21,7 @@
     </div>
     <div class="col">
       <h5 style="color:#fe0000;">Reach Us</h5>
-      <div id="map" style="height:400px;width:100%;"></div>
-      <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: 19.427337, lng: 72.78793};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 15, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQIH53JOFdhyRkTQcdCJFOCSjvRlXY-ms&callback=initMap">
-      </script>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9013.962429576144!2d72.78795543601184!3d19.428008814771115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83a0fb16ba47efb7!2sSt.+Paul+Church!5e0!3m2!1sen!2sin!4v1537651889989" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
