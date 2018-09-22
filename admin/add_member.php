@@ -16,7 +16,7 @@
     <input type="text" name="desg" class="form-control" id="exampleFormControlInput3" required>
   </div><br>
   <div class="form-group">
-    <label for="exampleFormControlSelect2">From Year</label>
+    <label for="exampleFormControlSelect2">Year</label>
     <select name="year" class="form-control" id="exampleFormControlSelect1">
       <option>2017 - 2020</option>
       <option>2014 - 2017</option>
