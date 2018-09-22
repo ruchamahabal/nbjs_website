@@ -34,9 +34,19 @@
   </div>
 
   <!-- Office bearer 2017 2018 images -->
+  <hr>
   <?php include_once 'officeBearer.php' ?>
 
   <!-- Membership registration form -->
-  
+  <hr>
+  <div class="row" style="margin-bottom:20px;" align=center>
+    <div class="col-8" style="padding-top:8px;">
+      <h4> Membership Registration Form Please Download Here </h4>
+    </div>
+    <div class="col-4">
+      <a href="#" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
+    </div>
+  </div>
+  <hr>
 <!-- Footer -->
 <?php include_once 'footer.php' ?>

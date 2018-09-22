@@ -1,7 +1,7 @@
 <?php include_once 'db_conn.php' ?>
 <?php include_once 'dashboard_header.php'?>
 
-<div class = "container">
+<div class = "container" style="padding:50px;">
 <form action="add_event_image.php" method="post">
   <div class="form-group">
     <label for="exampleFormControlInput1">Select Event Year</label>

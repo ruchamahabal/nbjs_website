@@ -50,7 +50,7 @@
             <a style="color:white;" class="nav-link" href="view_member.php">View member List</a>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Logout</a>
+            <a style="color:white;" class="nav-link" href="logout.php">Logout</a>
           </li>
         </ul>
       </div>

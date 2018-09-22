@@ -13,9 +13,6 @@
     <div class="col-4">
       <a href="#" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
     </div>
-
   </div>
 </div>
-
-
 <?php include_once 'footer.php' ?>

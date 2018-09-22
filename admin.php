@@ -1,7 +1,7 @@
-<?php include_once 'header.php' ?>
+<?php session_start(); include_once 'header.php'; ?>
 
 
-<div class="container jumbotron">
+<div class="container jumbotron" style="margin-top:50px;">
   <form action="admin.php" method="post">
     <div class="form-group">
       <label for="exampleInputEmail1">Username</label>

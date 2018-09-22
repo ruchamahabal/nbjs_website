@@ -70,7 +70,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a style="color:white;" class="nav-link" href="#">Event Registration</a>
+            <a style="color:white;" class="nav-link" href="event_registration.php">Event Registration</a>
           </li>
           <li class="nav-item">
             <a style="color:white;" class="nav-link" href="membership_form.php">Membership Registration Form</a>

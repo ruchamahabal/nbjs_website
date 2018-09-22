@@ -21,6 +21,22 @@
     </div>
     <div class="col">
       <h5 style="color:#fe0000;">Reach Us</h5>
+      <div id="map" style="height:400px;width:100%;"></div>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 19.427337, lng: 72.78793};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 15, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQIH53JOFdhyRkTQcdCJFOCSjvRlXY-ms&callback=initMap">
+      </script>
     </div>
   </div>
 </div>

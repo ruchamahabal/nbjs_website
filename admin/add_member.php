@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
   exit();
 }
 else {
-  // echo "<script> location.href='dashboard.php?failure'; </script>";
+  // echo "<script> location.href='../index.php'; </script>";
   exit();
 }
 
