@@ -62,21 +62,22 @@
         </div>
       </div>
 
+
       <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <script type="text/javascript">
-      $('#DeleteModal').on('show.bs.modal', function (event) {
-      var button = $(event.relatedTarget)
-      var mid = button.data('mid')
-      var modal = $(this)
-      modal.find('.modal-footer .mmid').val(mid)
-      })
-      </script>
+  <script type="text/javascript">
+  $('#DeleteModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var mid = button.data('mid')
+  var modal = $(this)
+  modal.find('.modal-footer .mmid').val(mid)
+  })
+  </script>
 
-      <div class="" style="background-color:#5F5F5F;" align=center>
-        <p style="font-size:16px;" class="lead">&#169; नानभाट जनहित सोसायटी 2018</p>
-      </div>
-    </body>
-</html>
+  <div class="" style="background-color:#5F5F5F;" align=center>
+          <p style="font-size:16px;" class="lead">&#169; नानभाट जनहित सोसायटी 2018</p>
+        </div>
+      </body>
+  </html>

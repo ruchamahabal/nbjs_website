@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 23, 2018 at 06:11 PM
--- Server version: 5.7.21
--- PHP Version: 5.6.35
+-- Generation Time: Sep 23, 2018 at 06:54 PM
+-- Server version: 5.7.19
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -65,15 +65,16 @@ CREATE TABLE IF NOT EXISTS `add_member_list` (
   `Designation` varchar(254) NOT NULL,
   `Year` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`member_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `add_member_list`
 --
 
 INSERT INTO `add_member_list` (`member_id`, `name`, `village`, `Designation`, `Year`) VALUES
-(21, 'Charles Lopes	', 'Akkarbhat', 'President', '2017 - 2020'),
-(22, 'Vincent Dbritto	', 'Chinchodi', 'Vice-president', '2017 - 2020');
+(22, 'Vincent Dbritto	', 'Chinchodi', 'Vice-president', '2017 - 2020'),
+(23, 'Charles Lopes', 'Akkarbhat', 'President', '2017 - 2020'),
+(24, 'Charles Lopes', 'Akkarbhat', 'President', '2014 - 2017');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
