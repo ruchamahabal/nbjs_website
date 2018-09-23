@@ -35,8 +35,8 @@
     </div>
   </div>
 </footer>
-<div class="" style="background-color:#5F5F5F; height:40px;" align=center>
-  <p style="font-size:18px; color:#fff; padding-top:10px;" class="lead">&#169; नानभाट जनहित सोसायटी 2018</p>
+<div class="" style="background-color:#151414; height:50px;" align=center>
+  <p style="font-size:18px; color:#fff; padding-top:15px;" class="lead">&#169; नानभाट जनहित सोसायटी 2018</p>
 </div>
 
     <!-- Bootstrap JS -->

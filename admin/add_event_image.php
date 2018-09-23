@@ -6,9 +6,9 @@
   <div class="form-group">
     <label for="exampleFormControlInput1">Select Event Year</label>
     <select name="year" class="form-control" id="exampleFormControlSelect1">
-      <option>2018</option>
-      <option>2017</option>
-      <option>2016</option>
+      <option>2018-2019</option>
+      <option>2017-2018</option>
+      <option>2016-2017</option>
     </select>
   </div><br>
   <div class="form-group">
@@ -25,6 +25,7 @@
     $year=$rights=$_POST['year'];
     if(isset($_FILES['image'])){
        $errors= array();
+       $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
        $file_name = $_FILES['image']['name'];
        $file_size =$_FILES['image']['size'];
        $file_tmp =$_FILES['image']['tmp_name'];
@@ -42,8 +43,13 @@
        }
 
        if(empty($errors)==true){
-          move_uploaded_file($file_tmp,"../uploads/".$year."_".$file_name);
-          echo "<script> alert('Image added successfully');</script>";
+         $sql = "INSERT INTO add_event_image (year, image) VALUES ('{$year}','$image')";
+         // $sql = "insert into add_event_image(year,image) Values ('{$year}','{$image}')";
+          // move_uploaded_file($file_tmp,"../uploads/".$year."_".$file_name);
+          if(mysqli_query($conn,$sql)){
+            echo "<script> alert('Image added successfully');</script>";
+          }
+
        }else{
           print_r($errors);
        }
