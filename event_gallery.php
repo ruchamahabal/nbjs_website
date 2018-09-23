@@ -36,7 +36,7 @@
              echo  $image;
              echo        "</div>";
              echo    "</div>";
-             if($count%3 == 2)
+             if($count%3 == 0)
              {
                 echo "</div>";
              }
