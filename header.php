@@ -64,10 +64,10 @@
             <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-hover="dropdown-menu" aria-haspopup="true" aria-expanded="false">
               Events Photo Gallary
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">2018 - 2019</a>
-              <a class="dropdown-item" href="#">2017 - 2018</a>
-              <a class="dropdown-item" href="#">2016 - 2017</a>
+            <div id="event_gallery_nav" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="event_gallery.php">2018 - 2019</a>
+              <a class="dropdown-item" href="event_gallery.php">2017 - 2018</a>
+              <a class="dropdown-item" href="event_gallery.php">2016 - 2017</a>
             </div>
           </li>
           <li class="nav-item">
