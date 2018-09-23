@@ -17,7 +17,7 @@
         <img class="d-block w-100" src="assets/img/carousel/2.jpg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/carousel/1.jpg" alt="Third slide">
+        <img class="d-block w-100" src="assets/img/carousel/3.jpg" alt="Third slide">
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="assets/img/carousel/2.jpg" alt="Fourth slide">
@@ -44,7 +44,7 @@
       <h4> Membership Registration Form Please Download Here </h4>
     </div>
     <div class="col-4">
-      <a href="#" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
+      <a href="assets/docs/membershipform.pdf" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
     </div>
   </div>
   <hr>

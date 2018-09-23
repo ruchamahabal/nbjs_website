@@ -11,7 +11,7 @@
   </p>
 </div>
 
-<div class="container">
+<div class="container" style="margin-top:50px;">
     <div class="container gallery-container">
       <div class="gallery" id="eventGallery">
 

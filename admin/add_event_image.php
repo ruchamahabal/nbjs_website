@@ -6,9 +6,9 @@
   <div class="form-group">
     <label for="exampleFormControlInput1">Select Event Year</label>
     <select name="year" class="form-control" id="exampleFormControlSelect1">
-      <option>2018-2019</option>
-      <option>2017-2018</option>
-      <option>2016-2017</option>
+      <option>2018 - 2019</option>
+      <option>2017 - 2018</option>
+      <option>2016 - 2017</option>
     </select>
   </div><br>
   <div class="form-group">

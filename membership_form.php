@@ -11,7 +11,7 @@
       <h4> Membership Registration Form Please Download Here </h4>
     </div>
     <div class="col-4">
-      <a href="#" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
+      <a href="assets/docs/membershipform.pdf" class="btn btn-lg" style="background-color:#fe0000;color:#fff;">Download</a>
     </div>
   </div>
 </div>
