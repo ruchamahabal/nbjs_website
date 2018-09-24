@@ -1,26 +1,34 @@
-<?php include_once 'db_conn.php' ?>
-<?php include_once 'dashboard_header.php'?>
+<?php session_start(); include_once 'db_conn.php' ?>
+<?php include_once 'dashboard_header.php' ?>
+<?php if(isset($_SESSION['login'])){
+  echo '<div class = "container" style="padding:50px;">
+  <form action="add_event_image.php" name="upload" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Select Event Year</label>
+      <select name="year" class="form-control" id="exampleFormControlSelect1">
+        <option>2018 - 2019</option>
+        <option>2017 - 2018</option>
+        <option>2016 - 2017</option>
+      </select>
+    </div><br>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Select Event Image</label><br>
+      <input type="file" name="image" id="fileToUpload"><br><br>
+      <input class="btn" style="background-color:#fe0000;color:#fff;" type="submit" value="Upload Image" name="submit">
+    </div>
+  </form>
+  </div>';
+} else {
+  header("Location: ../index.php");
+  exit();
+}
 
-<div class = "container" style="padding:50px;">
-<form action="add_event_image.php" name="upload" method="post" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Select Event Year</label>
-    <select name="year" class="form-control" id="exampleFormControlSelect1">
-      <option>2018 - 2019</option>
-      <option>2017 - 2018</option>
-      <option>2016 - 2017</option>
-    </select>
-  </div><br>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Select Event Image</label><br>
-    <input type="file" name="image" id="fileToUpload"><br><br>
-    <input class="btn" style="background-color:#fe0000;color:#fff;" type="submit" value="Upload Image" name="submit">
-  </div>
-</form>
-</div>
+?>
+
 <?php include_once '../footer.php' ?>
 
 <?php
+    $_SESSION['login']=false;
     error_reporting(0);
     $year=$rights=$_POST['year'];
     if(isset($_FILES['image'])){

@@ -1,19 +1,18 @@
-<?php include_once 'dashboard_header.php'; include_once 'db_conn.php'; ?>
+<?php session_start(); include_once 'dashboard_header.php'; include_once 'db_conn.php'; ?>
 
-<!-- Table -->
-<div class="container shadow-sm p-3 mb-5 bg-white rounded" style="margin-top:50px;">
-  <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name of the Member</th>
-        <th scope="col">Village</th>
-        <th scope="col">Designation</th>
-        <th scope="col">Delete</th>
-      </tr>
-    </thead>
-    <tbody id="member_table_body">
-      <?php
+<?php if (isset($_SESSION['login'])) {
+  echo '<div class="container shadow-sm p-3 mb-5 bg-white rounded" style="margin-top:50px;">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name of the Member</th>
+          <th scope="col">Village</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="member_table_body">';
       $sql = "select * from add_member_list";
       $result = mysqli_query($conn,$sql);
       $resultCheck = mysqli_num_rows($result);
@@ -34,10 +33,18 @@
                $counter ++;
           }
       }
-      ?>
-    </tbody>
-  </table>
-</div>
+      echo '</tbody>
+    </table>
+  </div>';
+}
+else {
+  header("Location: ../index.php");
+  exit();
+}
+?>
+<!-- Table -->
+
+
       <!-- delete-modal -->
       <div class="modal" id="DeleteModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

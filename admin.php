@@ -11,7 +11,7 @@
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" required>
     </div>
-    <input type="submit" name="submit" value="Login" class="btn btn-primary">
+    <input type="submit" name="login" value="Login" class="btn btn-primary">
   </form>
 </div>
 
@@ -21,8 +21,9 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  if ($_POST['submit']){
+  if ($_POST['login']){
     if ($username === 'admin' && $password === 'password'){
+      $_SESSION['login']=true;
       echo "<script> location.href='admin/dashboard.php'; </script>";
       exit();
 
