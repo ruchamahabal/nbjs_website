@@ -60,7 +60,7 @@ else {
             </div>
             <div class="modal-footer">
               <form action="delete_member.php" method="post">
-                <input name="mid"  class="form-control mmid" style="display:none;">
+                <input name="mid"  class="form-control" style="display:none;">
                 <button type="submit" class="btn" style="background-color:#fe0000; color:#fff;">Delete</button>
               </form>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
